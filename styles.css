@@ -1,25 +1,28 @@
 /* Styles du body et de la page */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: url('images/back.jpg'); /* Ajoutez votre image de fond ici */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image de fond */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Assure que le corps prend toute la hauteur de l'écran */
+    color: rgb(0, 0, 0); /* Couleur du texte par défaut en blanc */
 }
 
 .container {
     text-align: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour la lisibilité */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Ajoute un espacement en haut */
+    width: 80%; /* Limite la largeur de la boîte */
 }
 
 #generateButton {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 24px;
     cursor: pointer;
     background-color: #007BFF;
     color: white;
@@ -34,19 +37,8 @@ body {
     background-color: #0056b3;
 }
 
-#generateButton img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px; /* Espace entre l'image et le texte */
-}
-
-#armyComposition {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    min-height: 50px;
-    transition: opacity 0.5s ease;
-    opacity: 0;
+.troop-checkbox {
+    margin: 10px 0;
 }
 
 .troop {
@@ -55,20 +47,13 @@ body {
 }
 
 .troop.show {
-    opacity: 1;
-}
-
-.loading {
-    font-size: 16px;
-    color: #555;
-    margin-top: 20px;
+    opacity: 1; /* Rend la troupe visible */
 }
 
 #campSize {
-    padding: 10px;
-    font-size: 16px;
-    width: 80px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 300px; /* Ajustez la largeur selon vos préférences */
+    font-size: 20px; /* Ajustez la taille du texte si nécessaire */
+    padding: 10px; /* Ajoutez un peu de padding pour un meilleur aspect */
+    border: 1px solid #ccc; /* Assurez-vous qu'il a une bordure visible */
+    border-radius: 5px; /* Arrondissez les coins si vous le souhaitez */
 }
